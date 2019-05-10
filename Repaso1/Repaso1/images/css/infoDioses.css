@@ -1,0 +1,166 @@
+ /* fuentes en nuestro disco duro */
+ @font-face {
+    font-family: "alcazar-regular-font";
+    src: url("../fuentes/alcazar-regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "samarn-font";
+    src: url("../fuentes/SAMARN.ttf") format("truetype");
+}
+@font-face {
+    font-family: "shanln-font";
+    src: url("../fuentes/SHANLN.ttf") format("truetype");
+}
+
+
+/* ESTILOS DEL MENU LATERAL ------------------------------------------------------------------------- */
+
+.menuDioses
+{
+    top: 0px;
+    width: 30%;
+    height: 800px;
+    /* color de fondo del menu*/
+    background-color: #164450;
+    padding-top: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    opacity: 0.7;
+    position: absolute;
+    /*position: fixed;
+    height: 100%;
+    overflow: auto;*/
+}
+.contenedor1
+{
+    width: 30%;
+}
+
+.titleMenu{
+    color: #ffffff;
+    text-align: center;
+    font-family:"alcazar-regular-font";
+    /*font-family: "samarn-font";*/
+    /*font-family: "shanln-font";*/
+    font-size:60px;
+}
+
+.icoMenu{
+    width: 25%;
+    padding-bottom: 0%;
+    padding-right: 10%;
+}
+
+
+li a {
+    
+    display: block;
+    /* color del texto inactivo */
+    color: #ffffff;
+    padding: 8px 16px;
+    padding-left: 25%; /*25% del panel del menu*/
+    text-decoration: none;
+    font-size: 150%;
+    /*text-align: center;*/
+    font-family: "samarn-font";
+    /*font-size:40px;*/
+    font-size:250%;
+}
+
+li a.active {
+    /* color del fondo y texto activo */
+    background-color: #ffffff;
+    color: #1f4046;
+    
+}
+
+li a:hover:not(.active) {
+    /* color del fondo y texto al pasar el mouse */
+    background-color: #ffffff;
+    opacity: 0.5;
+    color: #1f4046;
+}
+
+/* PERSONAJES ----------------------------------------------------*/
+.personajes{
+    /*posicion del personaje:*/
+    top: 20%;
+    left: 65%;
+    width: 25%;
+    height: 550px;
+    margin: 0;
+    position: absolute;
+}
+
+.fondoHome{
+    /*background-color: aqua;*/
+    top: 0%;
+    left: 30%;
+    height: 100%;
+    position: absolute;
+    /*ocultar:
+    display: none;*/
+}
+
+.imgPersonaje{
+    height: 100%;
+    /*ocultar:*/
+    display: none;
+}
+
+/*INFORMACION DEL DIOS --------------------------------------------------------------*/
+
+.cajaDios{
+    top: 30%;
+    left: 35%;
+    width: 25%;
+    height: 500px;
+    /* color de fondo del menu*/
+    background-color: #554400;
+    opacity: 0.7;
+    padding-top: 80px;
+    margin: 0;
+    position: absolute;
+    /*position: fixed;
+    height: 100%;
+    overflow: auto;*/
+
+    /*ocultar:*/
+    display: none;
+}
+
+.triangulo{
+    top: 0%;
+    left: 100%;
+    width: 0;
+     height: 0;
+     border-right: 50px solid transparent;
+     border-top: 50px solid #554400;
+     border-left: 50px solid #554400;
+     border-bottom: 50px solid transparent;
+     position: absolute;
+}
+
+.tituloCaja{
+    font-family: "samarn-font";
+    font-size:300%;
+    color: #ffffff;
+    position: absolute;
+    /*para centrar mientras se usa "position absolute":*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.parrafoCaja{
+    font-family: "shanln-font";
+    font-size:200%;
+    color: #ffffff;
+    padding-top: 10%;
+    padding-left: 5%;
+
+}
+
+
+

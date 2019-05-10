@@ -1,0 +1,224 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2; 
+    font-size: 1em;
+    line-height: 1.5em;
+    
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+        }
+
+/* ESTILOS EL HEADER -------------------------------------------------------------------------*/
+
+#main-header {
+	background: #4d4d4d;
+	color: white;
+	height: 80px;
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 100;
+}
+	#main-header a {
+		color: white;
+    }
+    
+    .logoImagen{
+        display:block;
+        float: left;
+        height: 150px;
+        padding-left: 50px;
+        }
+ 
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #ee9598;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #ee9598;
+	}
+	
+ 
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+                }
+
+
+/* ESTILOS DEL MENU LATERAL Y PANEL GENERAL ------------------------------------------------------------------------- */
+
+        ul {
+            
+            font-family: "SAMARO_";
+            padding-top: 80px;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+            width: 20%;
+            /* color de fondo del menu*/
+            background-color: #164450;
+            opacity: 0.7;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        .contenedor1
+        {
+            width: 30%;
+            
+
+        }
+
+        li a {
+            
+            display: block;
+            /* color del texto inactivo */
+            color: #ee9598;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 150%;
+            text-align: center;
+        }
+
+        li a.active {
+            /* color del fondo y texto activo */
+            background-color: #9f191e;
+            color: white;
+            
+        }
+
+        li a:hover:not(.active) {
+            /* color del fondo y texto al pasar el mouse */
+            background-color: #721216;
+            color: white;
+        }
+    /* OJOS */
+    
+    .eyes {
+        position: absolute;
+        top: 112%;
+        /*left: 22.5%;
+        width: 25%;*/
+        left: 413px;
+        width: 60px;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    .eye {
+        width: 18px;
+        height: 12px;
+        display: inline-block;
+        margin: 3px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pupila {
+        width: 3px;
+        height: 3px;
+        
+        background :red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        border: 2px solid #000;
+    }
+    /* personajes */
+
+    .dioses
+    {
+        width: 70%;
+        height: 90%;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        /*
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 15%;
+        left: 80%; 
+        */
+    }
+    /* .divtexto
+    {
+        width: 
+    } */
+    .vamana
+    {
+        /*
+        width: 60%;
+        height: 150%;
+        */
+        padding-top: 5%;
+        padding-left: 50%;
+        height: 80%;
+        position: absolute;
+    }
+    .divtexto{
+        /*
+        width: 40%;
+        height: 90%;
+        top:-99.9%;
+        left:-50%;
+        position: relative;
+        */
+        width: 40%;
+        height: 80%;
+        top:20%;
+        left:10%;
+        position: absolute;
+    }
+    .caja1{
+        
+        height: 80%;
+    }

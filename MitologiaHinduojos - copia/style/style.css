@@ -1,0 +1,129 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2; 
+    font-size: 1em;
+    line-height: 1.5em;
+    
+    padding-top: 80px; /* Relleno superior igual a la altura de la cabecera*/
+        }
+
+/* ESTILOS EL HEADER -------------------------------------------------------------------------*/
+
+#main-header {
+	background: #4d4d4d;
+	color: white;
+	height: 80px;
+	
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 100;
+}
+	#main-header a {
+		color: white;
+    }
+    
+    .logoImagen{
+        display:block;
+        float: left;
+        height: 150px;
+        padding-left: 50px;
+        }
+ 
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #ee9598;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #ee9598;
+	}
+	
+ 
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+                }
+
+
+/* ESTILOS DEL MENU LATERAL Y PANEL GENERAL ------------------------------------------------------------------------- */
+
+        ul {
+            padding-top: 80px;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+            width: 20%;
+            /* color de fondo del menu*/
+            background-color: #164450;
+            opacity: 0.7;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            /* color del texto inactivo */
+            color: #ee9598;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 150%;
+            text-align: center;
+        }
+
+        li a.active {
+            /* color del fondo y texto activo */
+            background-color: #9f191e;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            /* color del fondo y texto al pasar el mouse */
+            background-color: #721216;
+            color: white;
+        }

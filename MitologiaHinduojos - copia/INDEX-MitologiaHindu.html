@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>MiniPinterest</title>
+    <LINK href="style/style.css" rel="stylesheet" type="text/css">
+        <script type='text/javascript' src='js/jquery-3.4.1.min.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body
+            {
+                background-image: url("images/GUI/fondo.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100%;
+            }
+        </style>
+        <!--  Estilo de ojos que se Mueven -->
+        <style>
+               
+    
+                .eyes {
+                    position: absolute;
+                    top: 112%;
+                    left: 20.3%;
+                    transform: translateY(-50%);
+                    width: 25%;
+                    text-align: center;
+                }
+    
+                .eye {
+                    width: 18px;
+                    height: 12px;
+                    
+                    display: inline-block;
+                    margin: 3px;
+                    border-radius: 50%;
+                    position: relative;
+                    overflow: hidden;
+                }
+    
+                .pupila {
+                    width: 3px;
+                    height: 3px;
+                    
+                    background :red;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 50%;
+                    border: 2px solid #000;
+                }
+            </style>
+</head>
+<!-- Script de los ojos que se mueven -->
+<script>
+        var  ojos = document.getElementsByClassName('pupila');
+        document.onmousemove = function(){
+            var x = event.clientX * 100 / window.innerWidth + "%";
+            var y = event.clientY * 100 / window.innerHeight + "%";
+
+            for (let index = 0; index < 2; index++) {
+                ojos[index].style.left = x;
+                ojos[index].style.top = y;
+                ojos[index].style.transform = "translate(-"+x+", -"+y+")";
+                
+                
+            }
+        }
+    </script>
+
+<body >
+
+    <!--HEADER--------------------------------------------------------------------------------------------------------------->
+
+    <header id="main-header">
+
+        <img class="logoImagen" src="images/GUI/logo.png" alt="abc" title="imagen abc" />
+        
+        <!--  Ojos que se mueven-->
+     <div class="fondo">
+            <div class="eyes">
+                <div class="eye">
+                    <div class="pupila"></div>
+                </div>
+                <div class="eye">
+                    <div class="pupila"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <a id="logo-header" href="#">
+            <span class="site-name">By Jessica Guarin</span>
+            <span class="site-desc">FullStack / Bictia</span>
+        </a> <!-- / #logo-header -->
+
+        <nav>
+            <ul>
+                <li><a id="punto1" href="#">Punto1</a></li>
+                <li><a id="punto2" href="#">Punto2</a></li>
+            </ul>
+        </nav><!-- / nav -->
+
+    </header><!-- / #main-header -->
+
+    <!--MENU LATERAL--------------------------------------------------------------------------------------------------------->
+    <!--fuente: https://www.w3schools.com/css/css_navbar.asp-->
+
+    <ul id="contenedor1">
+        <li class="hijo1"><a class="active" href="#home">Home</a></li>
+        <!--<li><a href="#news">News</a></li>-->
+        <li><a href="#about">+</a></li>
+    </ul>
+
+    <!--aqui comienza el panel principal-->
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+
+
+    </script>
+
+    
+
+</body>
+
+</html>

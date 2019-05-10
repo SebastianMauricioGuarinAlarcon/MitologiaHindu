@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="images/css/infoDioses.css">
+    <link rel="stylesheet" href="images/css/style.css">
+    <link rel="stylesheet" href="images/css/menu.css">
+
+    <title>MITOLOGIA HINDÚ</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="tituloPrincipal">MITOLOGIA HINDU</h1>
+            <input type="checkBox" id="menu-bar">
+            <label class="material-icons" for="menu-bar">menu</label>
+
+            <nav class="menuDesplegable">
+                <a href="">Dioses</a>
+                <a href="">Programadores</a>
+
+
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- PARTE PRINCIPAL PAGINA WEB -->
+        <section id="banner">
+
+
+            <video src="images/Imagenes/video.MP4" autoplay></video>
+
+            <div class="contenedor">
+                <h2>Mitología Hindú</h2>
+
+                <div class="rayita">
+                </div>
+
+                <a href="#">Leer más</a>
+            </div>
+        </section>
+
+        <section id="Bienvenido">
+            <div class="infoMito">
+                <h2 id="menu">
+                    Mitologia Hindú
+                </h2>
+
+                <div class="infoMitoS">
+
+                    <div class="infoMitoSS">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--INFO DIOSES --------------------------------------------------------------------------------------------->
+        <section id="DIOSES">
+
+            <div class="infoDioses">
+
+                <!--MENU LATERAL--------------------------------------------------------------------------------------------------------->
+                <!--fuente: https://www.w3schools.com/css/css_navbar.asp-->
+
+                <ul class="menuDioses" contenedor1 id="contenedor1">
+                    <br>
+                    <h1 class="titleMenu">Dioses</h1>
+                    <br>
+                    <li><a class="active" href="#" onclick="home()">Home</a></li>
+                    <li><a href="#DIOSES" onclick="vamana()"><img class="icoMenu"
+                                src="images/Imagenes/infoDioses/ico3.png">Vamana</a></li>
+                    <li><a href="#DIOSES" onclick="brahma()"><img class="icoMenu"
+                                src="images/Imagenes/infoDioses/ico7.png">Brahma</a></li>
+                    <li><a href="#DIOSES" onclick="ganesha()"><img class="icoMenu"
+                                src="images/Imagenes/infoDioses/ico1.png">Ganesha</a></li>
+                    <li><a href="#DIOSES" onclick="agni()"><img class="icoMenu"
+                                src="images/Imagenes/infoDioses/ico9.png">Agni</a></li>
+                    <li><a href="#DIOSES" onclick="rama()"><img class="icoMenu"
+                                src="images/Imagenes/infoDioses/ico6.png">Rama</a></li>
+                    <li><a href="#DIOSES" onclick="kali()"><img class="icoMenu"
+                                src="images/Imagenes/infoDioses/ico8.png">Kali</a></li>
+                </ul>
+
+                <!--INFORMACION DEL DIOS -------------------------------------------------------------->
+
+                <div class="cajaDios" >
+
+                    <!--triangulo------------>
+                    <div class="triangulo"></div>
+
+                    <h1 class="tituloCaja" id="titulo1" style="top:10%">agni</h1>
+                    <h1 class="tituloCaja">___________</h1>
+                    <p class="parrafoCaja">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus ipsam quam sapiente
+                        similique fuga pariatur sunt accusantium aspernatur laudantium. Pariatur officia magnam iure.
+                        Saepe sed totam nihil officiis possimus.
+                    </p>
+
+                </div>
+
+                <!--PEROSNAJES--------------------------------------------------------------->
+
+                <div class="fondoHome">
+                    <img class="fondoHome" src="images/Imagenes/infoDioses/fondoHome.png">
+                </div>
+
+                <div class="personajes">
+                    <img class="imgPersonaje" src="images/Imagenes/infoDioses/vamana.png">
+                </div>
+
+            </div>
+
+            <script src="images/JavaScript/jquery-3.4.1.min.js"></script>
+            <!--
+            <script>
+                $(document).ready(function () {
+                    $("button").click(function () {
+                        $("#div1").fadeIn();
+                        $("#div2").fadeIn("slow");
+                        $("#div3").fadeIn(3000);
+                    });
+                });
+            </script>-->
+
+            <script>
+                function home() {
+                    $(document).ready(function () {
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //mostrar fondoHome
+                        $(".fondoHome").show();
+                    });
+                }
+
+                function vamana() {
+                    $(document).ready(function () {
+                        //ocualtar fondoHome
+                        $(".fondoHome").hide();
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //cambiar informacion
+                        $("#titulo1").text('vamana');
+                        $(".parrafoCaja").text('Este es el texto nuevo asignado al dios Vamana');
+                        //poner textura brahma
+                        $(".imgPersonaje").attr("src","images/Imagenes/infoDioses/vamana.png");
+                        //mostrar personaje brahma
+                        $(".imgPersonaje").fadeIn(6000);
+                        //mostrar informacion de brahma
+                        $(".cajaDios").fadeIn(3000);
+                    });
+                }
+
+                function brahma() {
+                    $(document).ready(function () {
+                        //ocualtar fondoHome
+                        $(".fondoHome").hide();
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //cambiar informacion
+                        $("#titulo1").text('brahma');
+                        $(".parrafoCaja").text('Este es el texto nuevo asignado al dios Brahma');
+                        //poner textura brahma
+                        $(".imgPersonaje").attr("src","images/Imagenes/infoDioses/brahma.png");
+                        //mostrar personaje brahma
+                        $(".imgPersonaje").fadeIn(6000);
+                        //mostrar informacion de brahma
+                        $(".cajaDios").fadeIn(3000);
+                    });
+                }
+
+                function ganesha() {
+                    $(document).ready(function () {
+                        //ocualtar fondoHome
+                        $(".fondoHome").hide();
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //cambiar informacion
+                        $("#titulo1").text('ganesha');
+                        $(".parrafoCaja").text('Este es el texto nuevo asignado al dios ganesha');
+                        //poner textura brahma
+                        $(".imgPersonaje").attr("src","images/Imagenes/infoDioses/ganesha.png");
+                        //mostrar personaje brahma
+                        $(".imgPersonaje").fadeIn(6000);
+                        //mostrar informacion de brahma
+                        $(".cajaDios").fadeIn(3000);
+                    });
+                }
+
+                function agni() {
+                    $(document).ready(function () {
+                        //ocualtar fondoHome
+                        $(".fondoHome").hide();
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //cambiar informacion
+                        $("#titulo1").text('agni');
+                        $(".parrafoCaja").text('Este es el texto nuevo asignado al dios Agni');
+                        //poner textura brahma
+                        $(".imgPersonaje").attr("src","images/Imagenes/infoDioses/agni.png");
+                        //mostrar personaje brahma
+                        $(".imgPersonaje").fadeIn(6000);
+                        //mostrar informacion de brahma
+                        $(".cajaDios").fadeIn(3000);
+                    });
+                }
+
+                function rama() {
+                    $(document).ready(function () {
+                        //ocualtar fondoHome
+                        $(".fondoHome").hide();
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //poner textura brahma
+                        $(".imgPersonaje").attr("src","images/Imagenes/infoDioses/rama.png");
+                        //cambiar informacion
+                        $("#titulo1").text('rama');
+                        $(".parrafoCaja").text('Este es el texto nuevo asignado al dios Rama');
+                        //mostrar personaje brahma
+                        $(".imgPersonaje").fadeIn(6000);
+                        //mostrar informacion de brahma
+                        $(".cajaDios").fadeIn(3000);
+                    });
+                }
+
+                function kali() {
+                    $(document).ready(function () {
+                        //ocualtar fondoHome
+                        $(".fondoHome").hide();
+                        //ocultar personaje e informacion anterior
+                        $(".imgPersonaje").fadeOut();
+                        $(".cajaDios").fadeOut();
+                        //cambiar informacion
+                        $("#titulo1").text('kali');
+                        $(".parrafoCaja").text('Este es el texto nuevo asignado a la diosa kali');
+                        //poner textura brahma
+                        $(".imgPersonaje").attr("src","images/Imagenes/infoDioses/kali.png");
+                        //mostrar personaje brahma
+                        $(".imgPersonaje").fadeIn(6000);
+                        //mostrar informacion de brahma
+                        $(".cajaDios").fadeIn(3000);
+                    });
+                }
+
+            </script>
+
+        </section>
+
+        <section id="DESARROLLADORES">
+
+            <div class="infoDesarrolladores">
+
+                <div class="desaUno">
+
+                </div>
+                <div class="desaDos">
+
+                </div>
+                <div class="desaTres">
+
+                </div>
+                <div class="desaCuatro">
+
+                </div>
+
+                <div class="desaCinco">
+
+                </div>
+
+                <div class="desaSeis">
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <Footer>
+        <div class="contenedor">
+            <p class="copy">
+                CodeINK; 2019
+            </p>
+            <br>
+            <p class="copy">
+                FullStack/BicTIA
+            </p>
+
+
+        </div>
+    </Footer>
+
+
+    <script src="images/JavaScript/JaScr.js"></script>
+
+
+</body>
+
+</html>

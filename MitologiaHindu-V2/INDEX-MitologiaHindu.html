@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mitología Hindú</title>
+    <LINK href="images/GUI/ico1-n.png" rel="icon" type="img/png">
+    <LINK href="style/style.css" rel="stylesheet" type="text/css">
+     <style>
+            body
+            {
+                background-image: url("images/GUI/fondo.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100%;
+            }
+        </style>
+</head>
+<!-- Script de los ojos que se mueven -->
+<script>
+        var  ojos = document.getElementsByClassName('pupila');
+        document.onmousemove = function(){
+            var x = event.clientX * 100 / window.innerWidth + "%";
+            var y = event.clientY * 100 / window.innerHeight + "%";
+
+            for (let index = 0; index < 2; index++) {
+                ojos[index].style.left = x;
+                ojos[index].style.top = y;
+                ojos[index].style.transform = "translate(-"+x+", -"+y+")";
+                
+                
+            }
+        }
+    </script>
+<body >
+    <!--HEADER--------------------------------------------------------------------------------------------------------------->
+
+    <header id="main-header">
+
+        <img class="logoImagen" src="images/GUI/logo.png" alt="abc" title="imagen abc" />
+
+        <!--  Ojos que se mueven-->
+     <div class="fondo">
+            <div class="eyes">
+                <div class="eye">
+                    <div class="pupila"></div>
+                </div>
+                <div class="eye">
+                    <div class="pupila"></div>
+                </div>
+            </div>
+        </div>
+
+        <a id="logo-header" href="#">
+            <span class="site-name">By CodeInk</span>
+            <span class="site-desc">FullStack / Bictia</span>
+        </a> <!-- / #logo-header -->
+
+    </header><!-- / #main-header -->
+
+    <!--MENU LATERAL--------------------------------------------------------------------------------------------------------->
+    <!--fuente: https://www.w3schools.com/css/css_navbar.asp-->
+
+    <ul class= "contenedor1" contenedor1 id="contenedor1">
+        <li class="hijo1"><a class="active" href="#home">Dioses</a></li>
+        <br><br>
+        <li><a href="">Vamana</a></li>
+        <li><a href="#about">Brahma</a></li>
+        <li><a href="#about">Ganesha</a></li>
+        <li><a href="#about">Agni</a></li>
+        <li><a href="#about">Rama</a></li>
+        <li><a href="#about">Kali</a></li>
+    </ul>
+
+    <!--aqui comienza el panel principal-->
+    <div style="margin-left:35%;padding:1px;height:100px;">
+
+        <!-- DIV Dioses -->
+
+        <div class="dioses" id="vamana">
+            <img class="vamana" id="imagen"src="images/GUI/god-kali4.png">
+            <div class="divtexto" id="divtexto"><img class="caja1" src="images/GUI/panelTexto.png"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

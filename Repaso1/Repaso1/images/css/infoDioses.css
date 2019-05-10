@@ -95,9 +95,9 @@ li a:hover:not(.active) {
 
 .fondoHome{
     /*background-color: aqua;*/
-    top: 0%;
-    left: 30%;
-    height: 100%;
+    top: 10%;
+    left: 40%;
+    height: 80%;
     position: absolute;
     /*ocultar:
     display: none;*/
